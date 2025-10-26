@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">MiSitio</a>
+            <a href="index.html" class="nav-link active">Home</a> 
+            <a href="about.html" class="nav-link">About Us</a>
+        </div>
+        <div class="nav-right">
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Login">
+                <span class="login-icon">🔒</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>¡Hola! Bienvenido a mi proyecto de Petición POST.</h1>
+            <p>Aquí puedes practicar el inicio de sesión utilizando Fetch con Express/Node.js en el backend.</p>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="pageFooter">
+        <p>Harim Jesús Enrique Dueñas Dávila - Fecha: 21 de Octubre de 2025</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

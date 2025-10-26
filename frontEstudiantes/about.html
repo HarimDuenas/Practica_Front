@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - MiSitio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-logo">MiSitio</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link active">About Us</a>
+        </div>
+        <div class="nav-right">
+            <span id="userName" class="user-name"></span>
+            <button id="loginBtn" class="icon-btn" title="Login">
+                <span class="login-icon">🔒</span>
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section id="about">
+            <h1>Sobre este Proyecto</h1>
+            <p>Este proyecto fue desarrollado como una guía de clase para implementar un formulario de Login funcional usando una Petición POST con Fetch, con validaciones básicas en el servidor (Backend).</p>
+            <p>La arquitectura separa el Frontend y el Backend utilizando la tecnología CORS para la comunicación.</p>
+        </section>
+    </main>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Iniciar Sesión</h2>
+            <form id="formLogin">
+                <input type="text" id="login" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer id="pageFooter">
+        <p>Harim Jesús Enrique Dueñas Dávila - Fecha: 21 de Octubre de 2025</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
